@@ -1,9 +1,22 @@
-/**
-* Template Name: Lonely - v4.0.1
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+function sendMail(){
+    var body = document.getElementById("textAreaBody").value;
+    var name = document.getElementById("name").value;
+    var subject = document.getElementById("subject").value;
+    var email = document.getElementById("email").value;
+    if (email =="" || !(email.includes("@"))){
+        return;
+    }
+    if (body == ""){
+        return;
+    }
+    if (name == ""){
+        return;
+    }
+    if (subject == ""){
+        return;
+    }
+    window.open("mailto:rdao2003@gmail.com?subject="+subject+"&body="+body);
+}
 (function() {
   "use strict";
 
