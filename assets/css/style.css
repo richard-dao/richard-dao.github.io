@@ -309,29 +309,48 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/banner2.jpg") top 45% center;
+  background: url("../img/banner2.jpg") top 45% center ;
   background-size: cover;
   background-repeat: no-repeat;
   padding-left: var(--bs-gutter-x,4.5rem);
+padding-right: var(--bs-gutter-x,4.5rem);
 }
 
+
+.blur {
+    position: relative;
+    backdrop-filter: blur(2px) contrast(0.6);
+    z-index: 1000;
+    width: contain;
+    border-radius: 4px;
+    padding: 0.3rem;
+}
+.noblur{
+    position: relative;
+    backdrop-filter: blur(0px) contrast(100%);
+    z-index: 1000;
+}
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #0e0e10;
-  text-align: center;
+  color: black;
+  text-align: left;
+
+    
 }
 
 #hero h2 {
-  color: #0e0e10;
+  color: #fff;
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 300;
   font-style: italic;
   font-family: "Poppins", sans-serif;
-  text-align: center;
+  text-align: left;
+    max-width: 100%;
+
 }
 
 #hero .btn-get-started {
@@ -346,25 +365,51 @@ h1, h2, h3, h4, h5, h6 {
   color: #4285f4;
 }
 
+@media(max-width: 1450px){
+    #hero h1{
+        max-width: 100%;
+    }
+    #hero h2{
+        max-width: 100%;
+    }
+}
+
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
+@media (max-width: 990px){
+    #hero h1{
+        text-align: center;
+    }
+    #hero h2{
+        text-align: center;
+    }
+    .blur{
+        width: 100%;
+    }
+}
 
 @media (max-width: 768px) {
     #hero {
-        padding: 0 110px;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
     }
   #hero h1 {
     font-size: 40px;
     line-height: 36px;
       width: 100%;
+      text-align: center;
+      
   }
   #hero h2 {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 30px;
+      text-align: center;
+      width: 100%;
   }
 
 }
@@ -843,20 +888,21 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.testimonials {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+.testimonials .testimonials-slider img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.testimonials .testimonials-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.testimonials .testimonials-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -864,16 +910,16 @@ section {
   border: 1px solid #4285f4;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.testimonials .testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #4285f4;
 }
 
-.portfolio-details .portfolio-info {
+.testimonials .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(44, 73, 100, 0.08);
 }
 
-.portfolio-details .portfolio-info h3 {
+.testimonials .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -881,27 +927,27 @@ section {
   border-bottom: 1px solid #eee;
 }
 
-.portfolio-details .portfolio-info ul {
+.testimonials .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.testimonials .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
+.testimonials .portfolio-description {
   padding-top: 30px;
 }
 
-.portfolio-details .portfolio-description h2 {
+.testimonials .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.testimonials .portfolio-description p {
   padding: 0;
 }
 
