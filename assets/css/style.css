@@ -239,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
+  z-index: 1000;
   top: 15px;
   right: 15px;
 }
@@ -246,6 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
+  z-index: 1000;
   top: 55px;
   right: 15px;
   bottom: 15px;
@@ -326,7 +328,6 @@ padding-right: var(--bs-gutter-x,4.5rem);
 .noblur{
     position: relative;
     backdrop-filter: blur(0px) contrast(100%);
-    z-index: 1000;
 }
 #hero h1 {
   margin: 0 0 10px 0;
