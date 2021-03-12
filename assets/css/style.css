@@ -318,7 +318,13 @@ h1, h2, h3, h4, h5, h6 {
 padding-right: var(--bs-gutter-x,4.5rem);
 }
 
-
+.blur::before{
+    backdrop-filter: blur(2px) contrast(0.6);
+    width: contain;
+    border-radius: 4px;
+    padding: 0.3rem;
+    
+}
 .blur {
     backdrop-filter: blur(2px) contrast(0.6);
     width: contain;
