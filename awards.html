@@ -19,16 +19,29 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
+    <style>
+        @media (max-width: 768px){
+            #hero {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+    
+    
+    </style>
+    
 </head>
 
 <body>
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column align-items-start justify-content-center" style = "background: url('assets/img/Drawing-6.sketchpad.jpeg') top 15% center; background-size: cover; background-repeat: no-repeat">
+  <section id="hero" class="d-flex flex-column align-items-start justify-content-center" style = "background:url('assets/img/banner4.jpg') top 0% center; background-size: cover; background-repeat: no-repeat;">
       <div class="blur">
-          <h1>Contact Us</h1></div>
-          <div class="blur">
-              <h2>“I wish I could throw off the thoughts which poison my happiness, but I take a kind of pleasure in indulging them” ― Frédéric Chopin</h2></div>
+    <h1 class="noblur">Organizations and Awards</h1>
+          </div>
+      <div class="blur">
+    <h2 class="noblur">“It's clear to you that I am awesome, but I can never admit that, because that would make me an ass.” ― Jeff Winger</h2>
+</div>
   </section><!-- End Hero -->
 
   <!-- ======= Header ======= -->
@@ -45,7 +58,7 @@
           <li><a class="nav-link scrollto" href="index">Home</a></li>
           <li><a class="nav-link scrollto" href="about">About</a></li>
           <li><a class="nav-link scrollto" href="resume">Resume</a></li>
-          <li><a class="nav-link scrollto" href="awards">Awards and Honors</a></li>
+          <li><a class="nav-link scrollto" href="#testimonials" style = "color: #4285f4">Awards and Honors</a></li>
           <li><a class="nav-link scrollto" href="portfolio">Gallery</a></li>
           <li class="dropdown"><a href="#"><span>Other</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -63,7 +76,7 @@
               <li><a href="#">Twitch</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact" style = "color: #4285f4">Contact</a></li>
+          <li><a class="nav-link scrollto" href="contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -72,79 +85,48 @@
   </header><!-- End Header -->
 
   <main id="main">
-   <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+
+        <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Organizations and Awards</h2>
+          <p>I'm not a big fan of posting achievements online as they come off as ingenuine and boasted. So instead, here are a few awards I am actually proud of and a few organizations I am a apart of.</p>
         </div>
 
-        <div class="row">
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
-          <div class="col-lg-4 col-md-4">
-            <div class="contact-about">
-              <h3>Richard Dao</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="github"><i class="bi bi-github"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
+            <div class="swiper-slide" style="height: 300px;">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" alt="" style="width:100%; height: 100%; object-fit: contain; overflow: hidden;">
+                </div>
+
+            <div class="swiper-slide" style="height: 300px;">
+                  <img src="assets/img/testimonials/testimonials-2.jpeg" alt="" style="width:100%; height: 100%; object-fit: contain; overflow: hidden;">
+                </div>
+
+            <div class="swiper-slide" style="height: 300px;">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" alt="" style="width:100%; height: 100%; object-fit: contain; overflow: hidden;">
+                </div>
+
+            <div class="swiper-slide" style="height: 300px;">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" alt="" style="width:100%; height: 100%; object-fit: contain; overflow: hidden;">
+                </div>
+
+            <div class="swiper-slide" style="height: 300px;">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" alt="" style="width:100%; height: 100%; object-fit: contain; overflow: hidden;">
+                </div>
+              <div class="swiper-slide" style="height: 300px;">
+                  <img src="assets/img/testimonials/testimonials-6.jpg" alt="" style="width:100%; height: 100%; object-fit: contain; overflow: hidden; padding: 2rem;">
+                </div>
+
           </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="info">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <p>800 Villa Lane Apartment #1<br>Moraga, CA 94556</p>
-              </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-envelope"></i>
-                <p>rdao2003@gmail.com</p>
-              </div>
-
-              <div class="d-flex align-items-center mt-4" style="margin-bottom: 5%">
-                <i class="bi bi-phone"></i>
-                <p>+1 (510) 948-9984</p>
-              </div>
-
-            </div>
-          </div>
-            <br>
-          <div class="col-lg-5 col-md-8">
-            <form class="php-email-form" action="javascript:sendMail()">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                  
-                  
-                  
-                <textarea id= "textAreaBody" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                  
-                  
-              </div>
-              <div class="my-3">
-              </div>
-              <div class="text-center"><input class="send" type="submit" value="Send Message"></div>
-            </form>
-          </div>
-
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Testimonials Section -->
 
   </main><!-- End #main -->
 
@@ -167,4 +149,4 @@
 
 </body>
 
-</html>    
+</html>
